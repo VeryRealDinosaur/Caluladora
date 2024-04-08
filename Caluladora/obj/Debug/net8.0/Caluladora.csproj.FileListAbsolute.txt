@@ -129,3 +129,4 @@
 /Users/jovanyrobledo/Documents/Project/Caluladora/Caluladora/obj/Debug/net8.0/Caluladora.csproj.Up2Date
 /Users/jovanyrobledo/Documents/Project/Caluladora/Caluladora/obj/Debug/net8.0/Caluladora.genruntimeconfig.cache
 /Users/jovanyrobledo/Documents/Project/Caluladora/Caluladora/obj/Debug/net8.0/ref/Caluladora.dll
+/Users/jovanyrobledo/Documents/Project/Caluladora/Caluladora/obj/Debug/net8.0/Caluladora.sourcelink.json

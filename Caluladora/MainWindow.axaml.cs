@@ -123,28 +123,27 @@ public partial class MainWindow : Window
     {
         input += "7";
         resultLabel.Content = input;
-        float.TryParse(input, out float tempB);
+        double.TryParse(input, out double tempB);
     }
 
     private void _8CButton_OnClick(object? sender, RoutedEventArgs e)
     {
         input += "8";
         resultLabel.Content = input;
-        float.TryParse(input, out float tempB);
+        double.TryParse(input, out double tempB);
     }
 
     private void _9CButton_OnClick(object? sender, RoutedEventArgs e)
     {
         input += "9";
         resultLabel.Content = input;
-        float.TryParse(input, out float tempB);
+        double.TryParse(input, out double tempB);
     }
 
     private void XBButton_OnClick(object? sender, RoutedEventArgs e)
     { 
-        float.TryParse(input, out float inputInt);
-        input = "";
         float.TryParse(input, out float tempB);
+        float.TryParse(input, out float inputInt);
         temp = inputInt;
         float resultado = temp * tempB;
         input = "";
@@ -156,21 +155,21 @@ public partial class MainWindow : Window
     {
         input += "4";
         resultLabel.Content = input;
-        float.TryParse(input, out float tempB);
+        double.TryParse(input, out double tempB);
     }
 
     private void _5CButton_OnClick(object? sender, RoutedEventArgs e)
     {
         input += "5";
         resultLabel.Content = input;
-        float.TryParse(input, out float tempB);
+        double.TryParse(input, out double tempB);
     }
 
     private void _6CButton_OnClick(object? sender, RoutedEventArgs e)
     {
         input += "6";
         resultLabel.Content = input;
-        float.TryParse(input, out float tempB);
+        double.TryParse(input, out double tempB);
     }
 
     private void LessCButton_OnClick(object? sender, RoutedEventArgs e)
@@ -187,21 +186,21 @@ public partial class MainWindow : Window
     {
         input += "1";
         resultLabel.Content = input;
-        float.TryParse(input, out float tempB);
+        double.TryParse(input, out double tempB);
     }
 
     private void _2CButton_OnClick(object? sender, RoutedEventArgs e)
     {
         input += "2";
         resultLabel.Content = input;
-        float.TryParse(input, out float tempB);
+        double.TryParse(input, out double tempB);
     }
 
     private void _3Button_OnClick(object? sender, RoutedEventArgs e)
     {
         input += "3";
         resultLabel.Content = input;
-        float.TryParse(input, out float tempB);
+        double.TryParse(input, out double tempB);
     }
 
     private void PlusButton_OnClick(object? sender, RoutedEventArgs e)
@@ -221,7 +220,14 @@ public partial class MainWindow : Window
 
     private void DotButton_OnClick(object? sender, RoutedEventArgs e)
     {
-        input += ".";
+        if (resultLabel.Content == "")
+        {
+            input += "0.";
+        }
+        else
+        {
+            input += ".";
+        }
         resultLabel.Content = input;
     }
 
