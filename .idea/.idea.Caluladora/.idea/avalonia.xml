@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="Caluladora/App.axaml" value="Caluladora/Caluladora.csproj" />
+        <entry key="Caluladora/MainWindow.axaml" value="Caluladora/Caluladora.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,46 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Width="400"
+        Height="600"
+        x:Class="Caluladora.MainWindow"
+        Title="Caluladora">
+        
+        <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto" HorizontalAlignment="Center" VerticalAlignment="Center">
+                
+                <Label Grid.Row="0" x:Name="resultLabel" Height="100" Width="400" Background="#ff525355" Content="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" FontSize="40" Foreground="White" Padding="0,0,30,0">
+                        
+                </Label>
+                
+                <Grid Grid.Row="1" ColumnDefinitions="Auto,Auto,Auto, Auto,*">
+                        <Button Grid.Column="0" x:Name="ACButton" Width="100" Height="100" Content="AC" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="32" Background="#ff656466" Foreground="White" Click="ACButton_OnClick"/>
+                        <Button Grid.Column="1" x:Name="PercentButton" Width="100" Height="100" Content="%" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="32" Background="#ff656466" Foreground="White" Click="PercentButton_OnClick"/>
+                        <Button Grid.Column="2" x:Name="SumaButton" Width="50" Height="100" Content="S" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="32" Background="#ff656466" Foreground="White" Click="SumaButton_OnClick"/>
+                        <Button Grid.Column="3" x:Name="FactorialButton" Width="50" Height="100" Content="X!" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="32" Background="#ff656466" Foreground="White" Click="FactorialButton_OnClick" />
+                        <Button Grid.Column="4" x:Name="DivButton" Width="100" Height="100" Content="/" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="32" Background="#ffff9f0a" Foreground="White" Click="DivButton_OnClick" />
+                </Grid>
+                <Grid Grid.Row="2" ColumnDefinitions="Auto,Auto,Auto,*">
+                        <Button Grid.Column="0" x:Name="_7CButton" Width="100" Height="100" Content="7" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="32" Background="#ff7e7d7e" Foreground="White" Click="_7CButton_OnClick" />
+                        <Button Grid.Column="1" x:Name="_8CButton" Width="100" Height="100" Content="8" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="32" Background="#ff7e7d7e" Foreground="White" Click="_8CButton_OnClick" />
+                        <Button Grid.Column="2" x:Name="_9CButton" Width="100" Height="100" Content="9" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="32" Background="#ff7e7d7e" Foreground="White" Click="_9CButton_OnClick" />
+                        <Button Grid.Column="3" x:Name="XBButton" Width="100" Height="100" Content="x" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="32" Background="#ffff9f0a" Foreground="White" Click="XBButton_OnClick" />
+                </Grid>
+                <Grid Grid.Row="3" ColumnDefinitions="Auto,Auto,Auto,*">
+                        <Button Grid.Column="0" x:Name="_4CButton" Width="100" Height="100" Content="4" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="32" Background="#ff7e7d7e" Foreground="White" Click="_4CButton_OnClick" />
+                        <Button Grid.Column="1" x:Name="_5CButton" Width="100" Height="100" Content="5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="32" Background="#ff7e7d7e" Foreground="White" Click="_5CButton_OnClick" />
+                        <Button Grid.Column="2" x:Name="_6CButton" Width="100" Height="100" Content="6" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="32" Background="#ff7e7d7e" Foreground="White" Click="_6CButton_OnClick" />
+                        <Button Grid.Column="3" x:Name="LessCButton" Width="100" Height="100" Content="-" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="32" Background="#ffff9f0a" Foreground="White" Click="LessCButton_OnClick" />
+                </Grid>
+                <Grid Grid.Row="4" ColumnDefinitions="Auto,Auto,Auto,*">
+                        <Button Grid.Column="0" x:Name="_1CButton" Width="100" Height="100" Content="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="32" Background="#ff7e7d7e" Foreground="White" Click="_1CButton_OnClick" />
+                        <Button Grid.Column="1" x:Name="_2CButton" Width="100" Height="100" Content="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="32" Background="#ff7e7d7e" Foreground="White" Click="_2CButton_OnClick" />
+                        <Button Grid.Column="2" x:Name="_3Button" Width="100" Height="100" Content="3" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="32" Background="#ff7e7d7e" Foreground="White" Click="_3Button_OnClick" />
+                        <Button Grid.Column="3" x:Name="PlusButton" Width="100" Height="100" Content="+" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="32" Background="#ffff9f0a" Foreground="White" Click="PlusButton_OnClick" />
+                </Grid>
+                <Grid Grid.Row="5" ColumnDefinitions="Auto,Auto,Auto,*">        
+                        <Button Grid.Column="0" x:Name="ZeroButton" Width="200" Height="100" Content="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="32" Background="#ff7e7d7e" Foreground="White" Click="ZeroButton_OnClick" />
+                        <Button Grid.Column="2" x:Name="DotButton" Width="100" Height="100" Content="." HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="32" Background="#ff7e7d7e" Foreground="White" Click="DotButton_OnClick" />
+                        <Button Grid.Column="3" x:Name="EqualButton" Width="100" Height="100" Content="=" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="32" Background="#ffff9f0a" Foreground="White" Click="EqualButton_OnClick" />
+                </Grid>
+        </Grid>
+        
+</Window>
